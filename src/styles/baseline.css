@@ -1,0 +1,21 @@
+.baseline-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+
+    p {
+        position: absolute;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(40%);
+    }
+}

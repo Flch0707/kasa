@@ -1,0 +1,11 @@
+.menu-nav {
+    display: flex;
+    gap: 35px;
+
+    li {
+        list-style: none;
+    }
+    li:hover {
+        text-decoration: underline;
+    }
+}
