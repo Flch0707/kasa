@@ -1,0 +1,34 @@
+.housing-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+    background-color: #fafafa;
+    border-radius: 25px;
+}
+
+.house-card {
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    p {
+        color: white;
+        text-wrap: wrap;
+    }
+
+    .title-background {
+        background-image: linear-gradient(transparent 0%, #000000b4 100%);
+        position: absolute;
+        padding: 10px 20px;
+        width: 300px;
+    }
+}
