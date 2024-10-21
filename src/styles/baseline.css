@@ -10,6 +10,9 @@
     p {
         position: absolute;
         color: white;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
     }
 
     img {
