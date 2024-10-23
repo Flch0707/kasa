@@ -7,7 +7,7 @@
     border-radius: 25px;
 }
 
-.house-card {
+.house-card a {
     display: flex;
     flex-direction: column;
     justify-content: end;

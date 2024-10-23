@@ -1,10 +1,21 @@
+import { NavLink } from "react-router-dom"
+
 import "../styles/main-menu.css"
 
 export function MainMenu () {
     
-    const menu = ["Accueil", "À propos"]
+    const menu = [
+        {
+            title: "Accueil",
+            path: "/"
+        }, 
+        {
+            title: "À propos",
+            path: "/about"
+        }
+    ]
 
-    return <ul className="menu-nav">
-        { menu.map( el => <li key={el}>{el}</li> )}
-    </ul>
+    return <nav className="menu-nav">
+        { menu.map( el => <NavLink key={el.title} to={el.path} className="nav-link">{el.title}</NavLink> )}
+    </nav>
 }

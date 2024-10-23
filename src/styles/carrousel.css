@@ -1,0 +1,37 @@
+.carrousel-wrapper {
+    height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+
+    .nav-carrousel {
+        position: relative;
+        top: calc(412px*0.5 + 80px*0.5 + 20px);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .nav-arrow {
+        height: 90px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 412px;
+    }
+
+    p {
+        position: absolute;
+        color: white;
+        font-weight: 500;
+    }
+}

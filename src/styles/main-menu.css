@@ -1,11 +1,17 @@
 .menu-nav {
     display: flex;
     gap: 35px;
-
-    li {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    
+    .nav-link {
+        color: black;
         list-style: none;
+        text-decoration: none;
     }
-    li:hover {
+
+    .nav-link:hover, .active {
         text-decoration: underline;
     }
 }
