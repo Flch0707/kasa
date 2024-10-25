@@ -1,14 +1,16 @@
-export function CollapseContent ({content, title}) {
+import { forwardRef } from "react"
 
-    let isArray = false // init variable to store array data if data in an array
+export const CollapseContent = forwardRef( function CollapseContent ({ content, title, style }, contentRef) {
+
+    let isArray = false 
     Array.isArray(content) ? isArray = true : isArray = false
 
-    return isArray ? 
+    return <div className="collapse-content" style={style} ref={contentRef} >
+            {isArray ? 
+            <ul className="content collapse-list" id={`${title}-content`}>
+                {content.map( e => <li key={e}>{e}</li>)}
+            </ul>
+            : <p className="content" id={`${title}-content`}> {content} </p>}
+        </div>
 
-        <ul className="collapse-content collapse-list" id={`${title}-content`}>
-            {content.map( e => <li key={e}>{e}</li>)}
-        </ul> :
-
-        <div className="collapse-content" id={`${title}-content`}> {content} </div>
-
-}
+})

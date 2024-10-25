@@ -5,16 +5,18 @@
     justify-content: end;
     align-items: center;
     overflow: hidden;
+    position: relative;
     border-radius: 25px;
 
     .nav-carrousel {
         position: relative;
-        top: calc(412px*0.5 + 80px*0.5 + 20px);
+        top: 150px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 20px;
         box-sizing: border-box;
+        position: absolute;
     }
 
     .nav-arrow {
@@ -33,5 +35,26 @@
         position: absolute;
         color: white;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carrousel-wrapper {
+        height: 225px;
+
+        .nav-carrousel {
+            top: 85px;
+        }
+    
+        .nav-arrow {
+            height: 24px;
+        }
+    
+        img {
+        }
+    
+        p {
+            display: none;
+        }
     }
 }

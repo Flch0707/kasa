@@ -22,3 +22,16 @@
         filter: brightness(40%);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .baseline-wrapper {
+        justify-content: start;
+        height: 111px;
+        border-radius: 10px;
+        
+        p {
+            font-size: 24px;
+            padding: 20px;
+        }
+    }
+}

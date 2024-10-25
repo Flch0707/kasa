@@ -28,6 +28,7 @@ const router = createBrowserRouter([
           },
           {
             path: ":id",
+            errorElement: <PageError />,
             element: <House />,
             loader: () => housing
           }]

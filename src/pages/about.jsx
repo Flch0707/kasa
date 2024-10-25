@@ -1,4 +1,6 @@
 import { Collapse } from "../components/Collapse"
+import { Baseline } from "../components/Baseline"
+import image from "../assets/landscape2.jpg"
 
 export function About () {
 
@@ -21,7 +23,9 @@ export function About () {
         }
     ]
 
-    return content.map( (e, i) => <Collapse title={e.title}  content={e.content} key={`${e}-${i}`} /> )
-    
+    return <>
+        <Baseline baseline={null} image={image} />
+        {content.map( (e, i) => <Collapse title={e.title}  content={e.content} key={`${e}-${i}`} /> )}
+    </>
 }
 

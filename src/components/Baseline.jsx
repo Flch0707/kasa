@@ -1,9 +1,7 @@
-import image from "../assets/landscape.jpg"
 import "../styles/baseline.css"
 
-export function Baseline () {
+export function Baseline ({baseline, image}) {
 
-    const baseline = "Chez vous, partout et ailleurs"
 
     return <div className="baseline-wrapper">
         <img src={image} alt={image} />

@@ -17,27 +17,29 @@ export function House () {
     const housing = useLoaderData()
     const house = housing.find( e => e.id === id)
 
-    return <div className="house-details">
-        <div className="house-carrousel">
-            <PicturesCarrousel house={house}/>
-        </div>
-        <div className="house-title">
-            <Title house={house} />
-        </div>
-        <div className="house-host">
-            <Host house={house} />
-        </div>
-        <div className="house-tags">
-            <Tags house={house} />
-        </div>
-        <div className="house-rating">
-            <Rating rating={house.rating} />
-        </div>
-        <div className="house-description">
-            { house.description && <Collapse title="description" content={house.description} /> }
-        </div>
-        <div className="house-equipments">
-            { house.equipments && <Collapse title="equipments" content={house.equipments} /> }
-        </div>
-    </div>
+    return <>
+            <div className="house-details">
+                <div className="house-carrousel">
+                    <PicturesCarrousel house={house}/>
+                </div>
+                <div className="house-title">
+                    <Title house={house} />
+                </div>
+                <div className="house-host">
+                    <Host house={house} />
+                </div>
+                <div className="house-tags">
+                    <Tags house={house} />
+                </div>
+                <div className="house-rating">
+                    <Rating rating={house.rating} />
+                </div>
+                <div className="house-description">
+                    { house.description && <Collapse title="description" content={house.description} /> }
+                </div>
+                <div className="house-equipments">
+                    { house.equipments && <Collapse title="equipments" content={house.equipments} /> }
+                </div>
+            </div>
+        </>
 }

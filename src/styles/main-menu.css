@@ -2,16 +2,28 @@
     display: flex;
     gap: 35px;
     font-family: Montserrat;
-    font-size: 24px;
     font-weight: 500;
     
     .nav-link {
         color: black;
         list-style: none;
         text-decoration: none;
+        font-size: 24px;
     }
 
     .nav-link:hover, .active {
         text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-nav {
+        gap: 20px;
+
+        text-transform: uppercase;
+        
+        .nav-link {
+            font-size: 12px;
+        }
     }
 }

@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: 95%;
     max-width: 1240px;
     padding-top: 50px;
     display: flex;
@@ -12,5 +12,15 @@
 
     .nav-link {
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: calc(100% - 40px);
+
+        img {
+            max-height: 45px;
+        }
     }
 }
