@@ -7,7 +7,7 @@ export function Header () {
     const logoAlt = "Logo Kasa"
 
     return <header className="header">
-        <img src={logo} alt={logoAlt} />
+        <a href="/"><img src={logo} alt={logoAlt} /></a>
         <MainMenu />
     </header>
 }

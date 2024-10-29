@@ -39,11 +39,12 @@ export function Collapse ({ title, content }) {
     
   useEffect(() => {
     if (isCollapsed && contentRef.current) {
-      contentRef.current.classList.add('slide-in');
+      contentRef.current.classList.add('slide-in')
       contentRef.current && setContentHeight(0)
-      setTimeout(() => {
-        contentRef.current.classList.remove('slide-in');
-      }, 300); 
+      const delayCollapse = setTimeout(() => {
+        contentRef.current.classList.remove('slide-in')
+      }, 300);
+      return () => clearTimeout(delayCollapse)
     }
   }, [isCollapsed])
   
